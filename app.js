@@ -8,6 +8,6 @@ let song = [howMany + " lines of code in the file, " + howMany + " lines of code
 for (let i = 0; i < friends.length; i++) {
     console.log(friends[i]); 
     console.log(song);
-} while(howMany > 0) {
-    howMany--;
+} for(let n = 99; n > 0; n--) {
+    console.log(song[n]);
 }
