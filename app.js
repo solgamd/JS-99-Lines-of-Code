@@ -1,13 +1,14 @@
 let friends = ['Niko','Emilie','Marj','Anna','Maria'];
-let i = 0;
-let howMany = 99;
-let howManyLess = howMany - 1;
-let song = [howMany + " lines of code in the file, " + howMany + " lines of code, " + friends[i] + " strikes one out, clears it all out, " + howManyLess + " lines of code in the file"];
 
 
 for (let i = 0; i < friends.length; i++) {
-    console.log(friends[i]); 
-    console.log(song);
-} for(let n = 99; n > 0; n--) {
-    console.log(song[n]);
+    console.log(friends[i]);
+    for (var n = 99; n >= 1; n--) {
+        console.log(n + " lines of code in the file, " + n + " lines of code, " + friends[i] + " strikes one out, clears it all out, " + [n-1] + " lines of code in the file");
+    } if (n == 1) {
+        console.log(n + " line of code in the file, " + n + " line of code, " + friends[i] + " strikes one out, clears it all out, " + "no more lines of code in the file");
+    } else (n == 0) {
+            break;
+        } 
 }
+
